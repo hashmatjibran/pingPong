@@ -1,0 +1,103 @@
+
+/* game body is the body area in ehich the game is being played */
+.gameBody
+    {
+        background-image: linear-gradient(45deg,rgba(255, 192, 203, 0.6),rgba(245, 245, 245, 0.6),rgba(135, 207, 235, 0.6),rgba(245, 245, 245, 0.6),rgba(238, 130, 238, 0.6));
+        height: 90vh;
+        width: 70vw;
+        box-shadow: 0px 0px 2px 5px #14141482;
+    }
+
+    /* plate means the rod i.e player 1 and player 2 */
+.plate
+    {
+        background-image: linear-gradient(45deg,rgba(0, 128, 0, 0.7),rgba(255, 0, 0, 0.7));
+        height: 4%;
+        width: 20%;
+        position: relative;
+        border-radius: 30px;
+    }
+    /* general css property to set text color, font size and other properties */
+.text
+    {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.689);
+        font-size: 1.2rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+/* top rod can also be thought of player 1 */
+.topRod
+    {
+        top: 4px;
+    }
+
+    /* bottom rod can also be thought of player 2 */
+.bottomRod
+    {
+    top: 90%;
+    }
+
+    /* Css for the ball that is being used in the game */
+.ball
+    {
+        position: absolute;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        background-color: cadetblue;
+        top:642px;
+        left: 10%;
+        
+    }
+
+    /* Displaying the Winner Player  */
+.winner
+    {
+        position: absolute;
+        font-size: xx-large;
+        font-family: 'Courier New', Courier, monospace;
+        color: yellow;
+        background-image: linear-gradient(45deg,skyblue,violet);
+        top: 200px;
+        width: 70vw;
+        margin: auto;
+        text-align: center;
+    }
+    /* just a display hidden property to set display as none */
+.hidden
+    {
+        display: none;
+    }
+
+    /* rematch and exit bttons which appear after the match ends */
+.rematch,.exit
+    {
+
+        background-color: whitesmoke;
+        border-radius: 30px;
+        outline-style: none;
+        box-shadow: 0 0 1px 2px rgba(17, 132, 17, 0.6)   ;
+        font-size: 1.2rem;
+        font-family: monospace;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* description of the game */
+.Description
+    {
+        margin: auto;
+        width: 20vw;
+        display: inline-block;
+        left: 72vw;
+        position: relative;
+        top: -70vh;
+
+    }
+    /* footer section in the game */
+footer
+    {
+        position: absolute;
+        top: 90vh;
+        left: 40vw;
+    }
